@@ -23,6 +23,7 @@ public class OrderController {
 
     @RequestMapping(value ="/order/index",method = RequestMethod.GET)
     public String index(){
+		System.out.println("-------------");
         return "服务端口号: "+"\t"+ port + "\t"+ UUID.randomUUID().toString();
     }
 }
